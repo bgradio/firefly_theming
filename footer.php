@@ -1,7 +1,7 @@
         </div>
 
         <footer>
-            <p>Here is the footer.</p>
+
         </footer>
     </div>
 
