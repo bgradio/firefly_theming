@@ -6,11 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 	<?php wp_head(); ?>
 </head>
-<body>
-    <div class="ft-container">
+<body <?php body_class(); ?>>
+    <div id="page" class="ft-container">
         <div class="ft-header">
             <header>
-                <p>Here is the header.</p>
                 <nav>
 
                 </nav>
