@@ -5,13 +5,26 @@
  * * Version: 1.0
  * * License: GNU General Public License v2 or later
  * * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * * Text Domain: fireflytheming
+ * * Text Domain: firefly-theming
  * */
 /*** RESETS ***/
 @import url("css/normalize.css");
 /*** GLOBALS ***/
-p {
-  color: red;
+/*** Colors ***/
+body {
+  background-color: #292929;
 }
 
-/*# sourceMappingURL=../style.css.map */
+p {
+  color: #f8b319;
+}
+
+.ft-container {
+  background-color: #ffffff;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1268px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

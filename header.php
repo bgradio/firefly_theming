@@ -7,3 +7,14 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+    <div class="ft-container">
+        <div class="ft-header">
+            <header>
+                <p>Here is the header.</p>
+                <nav>
+
+                </nav>
+            </header>
+        </div>
+
+        <div class="ft-content-container">

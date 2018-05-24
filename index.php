@@ -1,5 +1,3 @@
 <?php get_header(); ?>
-<div>
-	<p>This text should be red</p>
-</div>
+    <?php get_template_part( 'content', get_post_format() ); ?>
 <?php get_footer(); ?>

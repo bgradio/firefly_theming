@@ -5,12 +5,24 @@
  * Version: 1.0
  * License: GNU General Public License v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: fireflytheming
+ * Text Domain: firefly-theming
  */
 
 /*** RESETS ***/
 @import url("css/normalize.css")
 
 /*** GLOBALS ***/
+@import "variables"
+
+body
+    background-color: $dark-grey
+
 p
-    color: red
+    color: $firefly-orange
+
+.ft-container
+    background-color: $white
+    height: 100vh
+    margin: 0 auto
+    max-width: 1268px
+    overflow: hidden
