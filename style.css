@@ -8,6 +8,7 @@
  * * Text Domain: fireflytheming
  * */
 /*** RESETS ***/
+@import url("css/normalize.css");
 /*** GLOBALS ***/
 p {
   color: red;
