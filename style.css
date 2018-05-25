@@ -53,6 +53,7 @@ p {
   position: fixed;
   max-width: inherit;
   width: 100%;
+  z-index: 9999;
 }
 .sticky + .ft__content-container {
   padding-top: 62px;
@@ -141,6 +142,10 @@ img.alignright {
   -o-transition: color 250ms;
   transition: color 250ms;
 }
+.ft__header .menu ul.sub-menu {
+  position: absolute;
+  visibility: hidden;
+}
 .ft__header .menu li {
   display: inline-block;
   list-style-type: none;
@@ -161,6 +166,9 @@ img.alignright {
   -ms-transition: color 250ms;
   -o-transition: color 250ms;
   transition: color 250ms;
+}
+.ft__header__site-title h1 {
+  font-size: 24px;
 }
 
 .ft__header-container {

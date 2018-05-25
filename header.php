@@ -11,9 +11,11 @@
         <div class="ft__header-container">
             <header class="ft__header clearfix guttered">
                 <div class="ft__header__site-title">
-                    <a href="<?php echo get_bloginfo('url') ?>">
-                        <?php echo get_bloginfo('name'); ?>
-                    </a>
+                    <h1>
+                        <a href="<?php echo get_bloginfo('url') ?>">
+                            <?php echo get_bloginfo('name'); ?>
+                        </a>
+                    </h1>
                 </div>
                 <nav>
                     <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
