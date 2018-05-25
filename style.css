@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald|Raleway");
 /*** GLOBALS ***/
 /*** Colors ***/
+/*** Paths ***/
 /*** Sizes ***/
 a {
   color: #9F4E00;
@@ -69,6 +70,11 @@ img.alignright {
 }
 
 /*** FIREFLY CUSTOMS ***/
+.ft__color-bar {
+  height: 5px;
+  background-color: #b97021;
+}
+
 .ft__container {
   background-color: #ffffff;
   margin: 0 auto;
@@ -103,6 +109,11 @@ img.alignright {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 1em 2em 0.5em;
+}
+
+.ft__front-banner-image {
+  background: url(/wp-content/themes/firefly-theming/img/fireflies.jpg) no-repeat center center;
+  height: 10em;
 }
 
 .ft__header {
