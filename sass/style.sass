@@ -11,20 +11,147 @@
 /*** RESETS ***/
 @import url("css/normalize.css")
 
+/*** FONTS ***/
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway')
+
 /*** GLOBALS ***/
 @import "variables"
 
+a
+  color: $firefly-orange-text
+
+  &:hover, &:focus
+    color: $firefly-orange-text-hover
+    -webkit-transform: color 250ms
+    -moz-transform: color 250ms
+    -ms-transform: color 250ms
+    -o-transform: color 250ms
+    transform: color 250ms
+
 body
-    background-color: $dark-grey
+  background-color: $dark-grey
+  font-family: "Raleway", sans-serif
+
+h1, h2, h3
+  font-family: "Oswald", sans-serif
 
 p
-    color: $firefly-orange
+  color: $black
 
-.ft-container
-    background-color: $white
-    height: 100vh
-    margin: 0 auto
-    max-width: 1268px
-    overflow: hidden
-    padding: 0.5em 0.75em 0.1em
+.clearfix:after
+  content: " "
+  clear: both
+  display: block
+  height: 0
+  position: absolute
+  visibility: hidden
+
+.sticky
+  position: fixed
+  max-width: inherit
+  width: 100%
+
+  + .ft__content-container
+    padding-top: $header-height
+
+/*** WORDPRESS ***/
+img
+  padding: 1em
+
+  &.alignleft
+    float: left
+
+  &.alignright
+    float: right
+
+/*** FIREFLY CUSTOMS ***/
+
+.ft__container
+  background-color: $white
+  margin: 0 auto
+  max-width: 1268px
+  overflow: hidden
+
+.ft__content
+  padding: $padding
+
+.ft__copyright
+  color: $white
+  font-size: small
+  text-align: right
+
+.ft__footer-container
+  background-color: $dark-grey
+  padding-bottom: 2em
+
+  .footer-sidebar
+    display: inline-block
+
+.ft__footer
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  padding: $padding-footer
+
+  .footer-sidebar
+    p
+      color: $firefly-orange
+      
+    .widget-text
+      color: $white
+
+.ft__header
+  align-items: center
+  display: flex
+  justify-content: space-between
+  padding-bottom: 0.15em
+  padding-top: 0.5em
+
+  .menu
+    font-family: 'Oswald', sans-serif
+    float: right
+
+    a
+      color: $white
+      margin-left: 1.25em
+      text-decoration: none
+      text-transform: uppercase
+
+      &:hover, &:focus
+        color: $firefly-orange-text
+        -webkit-transition: color 250ms
+        -moz-transition: color 250ms
+        -ms-transition: color 250ms
+        -o-transition: color 250ms
+        transition: color 250ms
+
+    ul li
+      display: inline-block
+      list-style-type: none
+
+  &__site-title
+    float: left
+    font-family: "Oswald", sans-serif
+    font-size: 24px
+
+    a
+      color: $white
+      text-decoration: none
+
+      &:hover, &:focus
+        color: $firefly-orange-text
+        -webkit-transition: color 250ms
+        -moz-transition: color 250ms
+        -ms-transition: color 250ms
+        -o-transition: color 250ms
+        transition: color 250ms
+
+
+.ft__header-container
+  background-color: $firefly-orange
+  height: $header-height
+
+.guttered
+  padding-left: $padding-gutter-size
+  padding-right: $padding-gutter-size
         

@@ -7,13 +7,18 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <div id="page" class="ft-container">
-        <div class="ft-header">
-            <header>
+    <div id="page" class="ft__container">
+        <div class="ft__header-container">
+            <header class="ft__header clearfix guttered">
+                <div class="ft__header__site-title">
+                    <a href="<?php echo get_bloginfo('url') ?>">
+                        <?php echo get_bloginfo('name'); ?>
+                    </a>
+                </div>
                 <nav>
-
+                    <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
                 </nav>
             </header>
         </div>
 
-        <div class="ft-content-container">
+        <div class="ft__content-container">

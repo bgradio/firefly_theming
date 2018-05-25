@@ -9,23 +9,159 @@
  * */
 /*** RESETS ***/
 @import url("css/normalize.css");
+/*** FONTS ***/
+@import url("https://fonts.googleapis.com/css?family=Oswald|Raleway");
 /*** GLOBALS ***/
 /*** Colors ***/
+/*** Sizes ***/
+a {
+  color: #9F4E00;
+}
+a:hover, a:focus {
+  color: #FFD370;
+  -webkit-transform: color 250ms;
+  -moz-transform: color 250ms;
+  -ms-transform: color 250ms;
+  -o-transform: color 250ms;
+  transform: color 250ms;
+}
+
 body {
   background-color: #292929;
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
 }
 
 p {
-  color: #f8b319;
+  color: #000000;
 }
 
-.ft-container {
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.sticky {
+  position: fixed;
+  max-width: inherit;
+  width: 100%;
+}
+.sticky + .ft__content-container {
+  padding-top: 62px;
+}
+
+/*** WORDPRESS ***/
+img {
+  padding: 1em;
+}
+img.alignleft {
+  float: left;
+}
+img.alignright {
+  float: right;
+}
+
+/*** FIREFLY CUSTOMS ***/
+.ft__container {
   background-color: #ffffff;
-  height: 100vh;
   margin: 0 auto;
   max-width: 1268px;
   overflow: hidden;
-  padding: 0.5em 0.75em 0.1em;
+}
+
+.ft__content {
+  padding: 1em 0.75em 2.5em;
+}
+
+.ft__copyright {
+  color: #ffffff;
+  font-size: small;
+  text-align: right;
+}
+
+.ft__footer-container {
+  background-color: #292929;
+  padding-bottom: 2em;
+}
+.ft__footer-container .footer-sidebar {
+  display: inline-block;
+}
+
+.ft__footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1em 2em 0.5em;
+}
+.ft__footer .footer-sidebar p {
+  color: #f8b319;
+}
+.ft__footer .footer-sidebar .widget-text {
+  color: #ffffff;
+}
+
+.ft__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.15em;
+  padding-top: 0.5em;
+}
+.ft__header .menu {
+  font-family: "Oswald", sans-serif;
+  float: right;
+}
+.ft__header .menu a {
+  color: #ffffff;
+  margin-left: 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.ft__header .menu a:hover, .ft__header .menu a:focus {
+  color: #9F4E00;
+  -webkit-transition: color 250ms;
+  -moz-transition: color 250ms;
+  -ms-transition: color 250ms;
+  -o-transition: color 250ms;
+  transition: color 250ms;
+}
+.ft__header .menu ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+.ft__header__site-title {
+  float: left;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+.ft__header__site-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ft__header__site-title a:hover, .ft__header__site-title a:focus {
+  color: #9F4E00;
+  -webkit-transition: color 250ms;
+  -moz-transition: color 250ms;
+  -ms-transition: color 250ms;
+  -o-transition: color 250ms;
+  transition: color 250ms;
+}
+
+.ft__header-container {
+  background-color: #f8b319;
+  height: 62px;
+}
+
+.guttered {
+  padding-left: 1.15em;
+  padding-right: 1.15em;
 }
 
 /*# sourceMappingURL=style.css.map */

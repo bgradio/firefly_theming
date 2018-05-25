@@ -1,9 +1,11 @@
-<article id="post-<?php the_ID(); ?>" class="content">
-    <h2 class="content__article-title">
-        <a href="<?php the_permalink(); ?>" title="the_title_attribute();"><?php the_title(); ?></a>
-    </h2>
+<article id="post-<?php the_ID(); ?>" class="ft__content guttered">
+    <?php if( !is_front_page() ): ?>
+        <h2 class="ft__content__article-title">
+            <?php the_title(); ?>
+        </h2>
+    <?php endif; ?>
 
-    <div class="content__article-content">
-        <?php the_excerpt(); ?>
+    <div class="ft__content__article-content clearfix">
+        <?php the_content(); ?>
     </div>
 </article>
