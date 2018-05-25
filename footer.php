@@ -18,11 +18,14 @@
                     </div>
                 <?php endif; ?>
             </footer>
-            <?php do_action( 'firefly_footer_copyright_bar' ); ?>
+
+            <div class="ft__copyright-container guttered">
+                <?php do_action( 'firefly_footer_copyright_bar' ); ?>
+            </div>
         </div>
+
     </div>
 
     <?php wp_footer(); ?>
-
 </body>
 </html>

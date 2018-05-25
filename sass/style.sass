@@ -80,9 +80,12 @@ img
   font-size: small
   text-align: right
 
-.ft__footer-container
+.ft__copyright-container
   background-color: $dark-grey
   padding-bottom: 2em
+
+.ft__footer-container
+  background-color: $dark-grey
 
   .footer-sidebar
     display: inline-block
@@ -92,13 +95,6 @@ img
   flex-flow: row wrap
   justify-content: space-between
   padding: $padding-footer
-
-  .footer-sidebar
-    p
-      color: $firefly-orange
-      
-    .widget-text
-      color: $white
 
 .ft__header
   align-items: center
@@ -125,7 +121,7 @@ img
         -o-transition: color 250ms
         transition: color 250ms
 
-    ul li
+    li
       display: inline-block
       list-style-type: none
 
@@ -150,6 +146,19 @@ img
 .ft__header-container
   background-color: $firefly-orange
   height: $header-height
+
+.footer-sidebar
+  p
+    color: $firefly-orange
+
+  ul
+    padding: 0
+
+    li
+      list-style-type: none
+
+  .widget-text
+    color: $white
 
 .guttered
   padding-left: $padding-gutter-size

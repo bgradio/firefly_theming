@@ -41,4 +41,4 @@ function firefly_footer_copyright() {
     echo $firefly_copyright;
 }
 
-add_action( 'firefly_footer_copyright_bar', 'firefly_footer_copyright', 20 );
+add_action( 'firefly_footer_copyright_bar', 'firefly_footer_copyright', 5 );
